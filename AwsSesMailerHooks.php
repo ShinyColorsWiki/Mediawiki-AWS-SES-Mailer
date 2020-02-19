@@ -34,7 +34,7 @@ class AwsSesMailerHooks {
 
         foreach( $to as $recipient ) {
             $param['Destination'] = array(
-                'ToAddresses' => $recipient,
+                'ToAddresses' => (array) $recipient,
             );
         }
 
