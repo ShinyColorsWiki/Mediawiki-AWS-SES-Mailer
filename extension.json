@@ -1,0 +1,35 @@
+{
+  "name": "AwsSesMailer",
+  "version": "0.1",
+  "author": [
+    "MPThLee"
+  ],
+  "url": "https://github.com/ShinyColors/Mediawiki-AWS-SES-Mailer",
+  "descriptionmsg": "aws-ses-mailer-desc",
+  "license-name": "mit",
+  "type": "other",
+  "AutoloadClasses": {
+    "AwsSesMailerHookss": "AwsSesMailerHooks.php"
+  },
+  "MessagesDirs": {
+    "AwsSesMailerHooks": [
+      "i18n"
+    ]
+  },
+  "Hooks": {
+    "AlternateUserMailer": [
+      "AwsSesMailerHooks::onAlternateUserMailer"
+    ]
+  },
+  "load_composer_autoloader": true,
+  "config": {
+    "AwsSesCredentials": {
+      "key": false,
+      "secret": false,
+      "token": false,
+      "_merge_strategy": "array_plus"
+    },
+    "AwsSesRegion": false
+  },
+  "manifest_version": 1
+}

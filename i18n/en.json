@@ -1,0 +1,8 @@
+{
+  "@metadata": {
+    "authors": [
+      "MPThLee"
+    ]
+  },
+  "aws-ses-mailer-desc": "Send emails through AWS SES API service from MediaWiki"
+}
