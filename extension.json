@@ -9,7 +9,7 @@
   "license-name": "mit",
   "type": "other",
   "AutoloadClasses": {
-    "AwsSesMailerHookss": "AwsSesMailerHooks.php"
+    "AwsSesMailerHooks": "AwsSesMailerHooks.php"
   },
   "MessagesDirs": {
     "AwsSesMailerHooks": [
