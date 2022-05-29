@@ -2,7 +2,6 @@
   "name": "shinywiki/mediawiki-aws-ses-mailer",
   "require": {
     "aws/aws-sdk-php": "^3.133",
-    "guzzlehttp/guzzle": "6.3.3"
   },
   "require-dev": {
     "jakub-onderka/php-parallel-lint": "1.0.0",
