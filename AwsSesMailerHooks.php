@@ -24,7 +24,7 @@ class AwsSesMailerHooks {
     ) {
         global $wgAwsSesCredentials, $wgAwsSesRegion;
 
-        if ( !( $wgAwsSesCredentials || $wgAwsSesRegion ) ) {
+        if ( !( $wgAwsSesCredentials && $wgAwsSesRegion ) ) {
             return true;
         }
 
