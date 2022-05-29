@@ -25,8 +25,8 @@ class AwsSesMailerHooks {
         global $wgAwsSesCredentials, $wgAwsSesRegion;
 
         if ( !( $wgAwsSesCredentials || $wgAwsSesRegion ) ) {
-			return true;
-		}
+            return true;
+        }
 
         $ses = new SesClient([
             'version' => 'latest',
