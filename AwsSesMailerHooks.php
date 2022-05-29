@@ -24,11 +24,15 @@ class AwsSesMailerHooks {
     ) {
         global $wgAwsSesCredentials, $wgAwsSesRegion;
 
-         $ses = new SesClient([
-             'version' => 'latest',
-             'region'  => $wgAwsSesRegion,
-             'credentials' => $wgAwsSesCredentials
-         ]);
+        if ( !( $wgAwsSesCredentials || $wgAwsSesRegion ) ) {
+			return true;
+		}
+
+        $ses = new SesClient([
+            'version' => 'latest',
+            'region'  => $wgAwsSesRegion,
+            'credentials' => $wgAwsSesCredentials
+        ]);
 
         $param = array();
 
